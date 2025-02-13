@@ -69,5 +69,10 @@ namespace FS0924_S13_L4.Models
         {
             return AccessHistory[AccessHistory.Count - 1];
         }
+
+        public static List<DateTime> GetAllAccesses()
+        {
+            return AccessHistory;
+        }
     }
 }
