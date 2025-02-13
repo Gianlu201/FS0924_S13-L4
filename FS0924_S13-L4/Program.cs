@@ -88,6 +88,18 @@ while (loop)
                 Console.ReadKey();
                 break;
             case 3:
+                if (User.IsUserLogged())
+                {
+                    Console.WriteLine($"Your last log in was at: {User.GetLastAccess()}");
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You'r not logged!");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+
+                Console.ReadKey();
                 break;
             case 4:
                 break;

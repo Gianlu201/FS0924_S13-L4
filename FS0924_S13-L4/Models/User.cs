@@ -64,5 +64,10 @@ namespace FS0924_S13_L4.Models
                 return false;
             }
         }
+
+        public static DateTime GetLastAccess()
+        {
+            return AccessHistory[AccessHistory.Count - 1];
+        }
     }
 }
